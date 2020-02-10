@@ -23,12 +23,28 @@ export default {
     HeaderAromes,
     AromesSelection,
     ButtonSelectionAromes,
-  }
+  },
+  // data: () => {
+  //   return {
+  //     flavours = []
+  //   }
+
+  // },
+  // methods: {
+  //   pushFlavours(value) {
+  //     return this.flavours = [...this.flavours, value];
+  //   }
+  // }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
+.container {
+  background-color: #c9c9c9;
+}
+
 h3 {
   margin: 40px 0 0;
 }

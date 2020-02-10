@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="arome"><img src='../assets/cereales-0.png' /><span>céréals</span></div>
+    <div class="arome"><img v-on:click="saveFlavour" src='../assets/cereales-0.png' /><span>céréals</span></div>
     <div class="arome"><img src='../assets/fruite-0.png' /><span>fruité</span></div>
     <div class="arome"><img src='../assets/levain-0.png' /><span>levain</span></div>
     <div class="arome"><img src='../assets/torrefie-0.png' /><span>torréfié</span></div>
@@ -14,6 +14,18 @@
 <script>
 export default {
   name: "AromesSelection",
+  data() {
+    return {
+      flavours: [],
+    }
+  },
+  methods: {
+    saveFlavour(event) {
+      console.log(event.target);
+      //this.flavours = [...this.flavours, event.target.value];
+      
+    }
+  }
 };
 </script>
 
